@@ -1,0 +1,173 @@
+// Colores
+
+
+// Fuentes
+
+
+// Clases complementarias
+.full{
+  width: 100%;
+  float: left;
+  clear: both;
+}
+
+.menu{
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.menu-h{
+  ul{
+    li{
+      display: inline-block;
+    }
+  }
+}
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.625em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.625em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+	display: block;
+}
+
+// Media queries
+$breakpoints: (    
+  "phone": 400px,    
+  "phone-wide": 480px,    
+  "phablet": 560px,    
+  "tablet-small": 640px,    
+  "tablet": 768px,    
+  "tablet-wide": 1024px,    
+  "desktop": 1248px,    
+  "desktop-wide": 1440px);
+  
+@mixin mq($width, $type: min) {    
+  @if map_has_key($breakpoints, $width) {        
+    $width: map_get($breakpoints, $width);        
+  @if $type == max {            
+    $width: $width - 1px;        
+  }        
+  @media only screen and (#{$type}-width: $width) {            
+    @content;        
+    }    
+  }
+}
+
+// Uso @include mq($breakpoint) { @content }
+
+@mixin altos($alto){
+  padding-top: $alto;
+  padding-bottom: $alto;
+}
+
+@mixin anchos($ancho){
+  padding-left: $ancho;
+  padding-bottom: $ancho;
+}
+
+/*
+	Uso:
+	.element {
+  	background-image: url(../img/background.png);
+		@include retina {
+			background-image: url(../img/background@2x.png);
+		}
+	}
+*/
+
+@mixin retina {
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (-moz-min-device-pixel-ratio: 1.5),
+	only screen and (-o-min-device-pixel-ratio: 3 / 2),
+	only screen and (min-device-pixel-ratio: 1.5),
+	only screen and (min-resolution: 1.5dppx) {
+		@content;
+	}
+}
+
+@mixin css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false){
+	@include pseudo($pos: $position);
+	width: 0;
+	height: 0;
+
+	@if $round {
+		border-radius: 3px;
+	}
+
+	@if $direction == down {
+		border-left: $size solid transparent;
+		border-right: $size solid transparent;
+		border-top: $size solid $color;
+		margin-top: 0 - round( $size / 2.5 );
+	} @else if $direction == up {
+		border-left: $size solid transparent;
+		border-right: $size solid transparent;
+		border-bottom: $size solid $color;
+		margin-bottom: 0 - round( $size / 2.5 );
+	} @else if $direction == right {
+		border-top: $size solid transparent;
+		border-bottom: $size solid transparent;
+		border-left: $size solid $color;
+		margin-right: -$size;
+	} @else if  $direction == left {
+		border-top: $size solid transparent;
+		border-bottom: $size solid transparent;
+		border-right: $size solid $color;
+		margin-left: -$size;
+	}
+}
+
+/*
+	CSS Triángulos
+	ejemplo:
+	.elemento {
+		&::before {
+			@include css-triangle(blue, down);
+		}
+	}
+*/
+
+@mixin responsive-ratio($x,$y, $pseudo: false) {    
+  $padding: unquote( ( $y / $x ) * 100 + '%' );    
+  @if $pseudo {        
+    &:before {            
+      @include pseudo($pos: relative);            
+      width: 100%;            
+      padding-top: $padding;        
+    }    
+  } @else {        
+    padding-top: $padding;    
+    }
+  }
+  
+  // USO @include responsive-ratio(16,9);}
