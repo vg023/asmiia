@@ -8,8 +8,6 @@
         <?php get_template_part('loops/index-loop'); ?>
       </div><!-- /#content -->
     </div>
-  <?php get_template_part('loops/index-post'); ?>
-
   </div><!-- /.row -->
 </div><!-- /.container-responsive -->
 

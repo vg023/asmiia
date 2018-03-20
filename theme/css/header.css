@@ -1,0 +1,13 @@
+#menu{
+	list-style: none;
+}
+#menu li{
+	display: inline-block;
+}
+#menu li a{
+	display: block;
+}
+.sub-menu {
+	list-style: none;
+	display: none;
+}

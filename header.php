@@ -16,13 +16,17 @@
 <body <?php body_class(); ?>>
 
 <nav id="nav-main">
-<ul id="menu">
-  <li class="menu-item">home
-    <ul id="sub-menu">
-      <li class="sub-menu-item">archivo</li>
-    </ul>
-  </li>
-  <li class="menu-item">¿Quienes somos?</li>
-  <li class="menu-item">Contactanos</li>
-</ul>
+  <ul id="menu">
+    <li class="menu-item">home</li>
+    <li class="menu-item">¿Quienes somos?</li>
+    <li class="menu-item">Contactanos</li>
+    <li class="menu-item">¿Cómo puedo aportar?</li>
+    <li class="menu-item">Publicaciónes
+      <ul class="sub-menu">
+        <li class="sub-menu-item">convocatorias</li>
+        <li class="sub-menu-item">Enlace</li>
+        <li class="sub-menu-item">Blog</li>
+      </ul>
+    </li>
+  </ul>    
 </nav>

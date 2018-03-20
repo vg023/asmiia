@@ -14,6 +14,9 @@ if ( ! function_exists('b4st_enqueues') ) {
 	  wp_register_style('b4st-css', get_template_directory_uri() . '/theme/css/b4st.css', false, null);
 		wp_enqueue_style('b4st-css');
 
+		 wp_register_style('header-css', get_template_directory_uri() . '/theme/css/header.css', false, null);
+		wp_enqueue_style('header-css');
+
 		// Scripts
 
 		wp_register_script('font-awesome-config-js', get_template_directory_uri() . '/theme/js/font-awesome-config.js', false, null, null);
