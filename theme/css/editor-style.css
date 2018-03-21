@@ -10,6 +10,8 @@
 @import url('general.css');
 @import url('b4st.css');
 @import url('header.css');
+@import url('publicacion.css');
+@import url('index.css');
 
 body#tinymce {
   padding: 10px !important;
