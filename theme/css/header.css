@@ -1,13 +1,2 @@
-#menu{
-	list-style: none;
-}
-#menu li{
-	display: inline-block;
-}
-#menu li a{
-	display: block;
-}
-.sub-menu {
-	list-style: none;
-	display: none;
-}
+#nav-main{heigth:10rem;heigth:auto;width:100%;display:flex;justify-content:center;align-items:center}#nav-main #menu{list-style:none}#nav-main #menu li{display:inline-block}#nav-main #menu li:hover{background:red}#nav-main #menu li .sub-menu{display:none}
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,7 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+body{
+	font-family: 'Muli';
+}

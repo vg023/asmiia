@@ -11,12 +11,25 @@ if ( ! function_exists('b4st_enqueues') ) {
 		wp_register_style('bootstrap-css', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css', false, '4.0.0', null);
 		wp_enqueue_style('bootstrap-css');
 
-	  wp_register_style('b4st-css', get_template_directory_uri() . '/theme/css/b4st.css', false, null);
+ 		wp_register_style('general-css', get_template_directory_uri() . '/theme/css/general.css', false, null);
+		wp_enqueue_style('general-css');
+	  	
+	  	wp_register_style('b4st-css', get_template_directory_uri() . '/theme/css/b4st.css', false, null);
 		wp_enqueue_style('b4st-css');
 
 		 wp_register_style('header-css', get_template_directory_uri() . '/theme/css/header.css', false, null);
 		wp_enqueue_style('header-css');
 
+		 wp_register_style('index-css', get_template_directory_uri() . '/theme/css/index.css', false, null);
+		wp_enqueue_style('index-css');
+		if(is_page('publicaciones'))
+		 {
+		 	wp_register_style('publicaciones-css', get_template_directory_uri() . '/theme/css/publicaciones.css', false, null);
+			wp_enqueue_style('publicaciones-css');
+
+		}else{
+
+		}
 		// Scripts
 
 		wp_register_script('font-awesome-config-js', get_template_directory_uri() . '/theme/js/font-awesome-config.js', false, null, null);
