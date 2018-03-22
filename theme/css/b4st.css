@@ -28,17 +28,7 @@
 	display: block;
 }
 
-/* Max img widths */
 
-img,
-.size-auto,
-.size-full,
-.size-large,
-.size-medium,
-.size-thumbnail {
-	max-width: 100%;
-	height: auto;
-}
 
 /* Responsive Container (because Bootstrap 4.0.0 doesn't have this) */
 
