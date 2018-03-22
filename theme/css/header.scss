@@ -15,13 +15,29 @@
 		margin:0;
 		list-style:none;
 		li{
+			a{
+				color:white;
+				display:block;
+				text-decoration:none;
+			}
+			position:relative;
 			padding:0.5rem;
 			display: inline-block;
 			&:hover{
 				background:red;
 			}
+			
+		}
+		.trigger{
 			.sub-menu{
+				margin:0;
+				padding:0;
+				position:absolute;
 				display:none;
+				left:0;
+				.sub-menu-item{
+					display:block;
+				}
 			}
 		}
 	}

@@ -17,15 +17,15 @@
 
 <nav id="nav-main">
   <ul id="menu">
-    <li class="menu-item">home</li>
-    <li class="menu-item">¿Quienes somos?</li>
-    <li class="menu-item">Contactanos</li>
-    <li class="menu-item">¿Cómo puedo aportar?</li>
-    <li class="menu-item">Publicaciónes
+    <li class="menu-item"><a href="">home</a></li>
+    <li class="menu-item"><a href="">¿Quienes somos?</a></li>
+    <li class="menu-item"><a href="">Contactanos</a></li>
+    <li class="menu-item"><a href="">¿Cómo puedo aportar?</a></li>
+    <li class="menu-item trigger"><a href="">Publicaciónes</a>
       <ul class="sub-menu">
-        <li class="sub-menu-item">convocatorias</li>
-        <li class="sub-menu-item">Enlace</li>
-        <li class="sub-menu-item">Blog</li>
+        <li class="sub-menu-item"><a href="">convocatorias</a></li>
+        <li class="sub-menu-item"><a href="">Enlace</a></li>
+        <li class="sub-menu-item"><a href="">Blog</a></li>
       </ul>
     </li>
   </ul>    

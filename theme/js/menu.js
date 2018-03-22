@@ -1,3 +1,15 @@
 $(document).ready(function(){
-	console.log('hola');
+	$(window).on("scroll",function(e){
+		if($(window).scrollTop()>200){
+			$('#nav-main').fadeOut('slow');
+		}else{
+			$('#nav-main').fadeIn('fast');
+		}
+	});
+	$(".trigger").on("mouseenter",function(e){
+		$('.sub-menu').show();
+	});
+	$(".trigger").on("mouseleave",function(e){
+		$('.sub-menu').hide();
+	});
 });
