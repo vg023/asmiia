@@ -53,6 +53,10 @@ if ( ! function_exists('b4st_enqueues') ) {
 		wp_register_script('b4st-js', get_template_directory_uri() . '/theme/js/b4st.js', false, null, true);
 		wp_enqueue_script('b4st-js');
 
+		wp_register_script('menu-js', get_template_directory_uri() . '/theme/js/menu.js', false, null, true);
+		wp_enqueue_script('menu-js');
+
+
 		if (is_singular() && comments_open() && get_option('thread_comments')) {
 			wp_enqueue_script('comment-reply');
 		}
