@@ -29,3 +29,20 @@
 .comprimido{
 	height:auto;
 }
+.parallax{
+	background-image:url('../img/parallax.jpeg');
+    background-attachment: fixed;
+    height: 100vh;
+    background-position: center;
+    .para-conte{
+    	display:flex;
+    	justify-content:center;
+    	align-items:center;
+    	height:100%;
+    	flex-direction:column;
+    	h1{
+    		color: white;
+    		text-transform:uppercase;
+    	}
+    }
+}

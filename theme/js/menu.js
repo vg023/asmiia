@@ -12,4 +12,6 @@ $(document).ready(function(){
 	$(".trigger").on("mouseleave",function(e){
 		$('.sub-menu').hide();
 	});
+	console.log($(window).innerHeight());
+	console.log($(window).outerHeight());
 });
