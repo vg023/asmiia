@@ -17,10 +17,16 @@
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 	</div>	
 </div>
-<div class="container-responsive mt-5">
+<div class="container-felx">
   <div class="row">
-    <div class="col-sm">
-      <div id="content" role="main">
+    <div class="col-sm d-flex">
+      <div id="content col-3" role="main">
+        <?php get_template_part('loops/index-loop'); ?>
+      </div><!-- /#content -->
+       <div id="content col-3" role="main">
+        <?php get_template_part('loops/index-loop'); ?>
+      </div><!-- /#content -->
+       <div id="content col-3" role="main">
         <?php get_template_part('loops/index-loop'); ?>
       </div><!-- /#content -->
     </div>
