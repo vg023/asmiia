@@ -7,6 +7,7 @@
 </div>
 <div class="quienes container-flex">
 	<h1>¿quienes somos?</h1>
+	<hr>
 	<i class="fa fa-angle-double-down flecha-abajo"></i>
 	<div class="quienes-conte">
 		<p>
@@ -41,6 +42,7 @@
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<div class="mask"></div>
 	</div>
 </div>
 <?php get_footer(); ?>
