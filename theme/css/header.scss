@@ -7,7 +7,7 @@
 	align-items:center;
 	position:fixed;
 	z-index:1;
-	background:black;
+	background:rgb(238,238,238);
 	text-transform:uppercase;
 	color:white;
 	#menu{
@@ -16,15 +16,21 @@
 		list-style:none;
 		li{
 			a{
-				color:white;
+				color:black;
 				display:block;
 				text-decoration:none;
+				border-bottom: 1px solid transparent;
+				border-bottom-width: 100%;
+				&:hover{
+					border-color: gray;
+					 transition:  all ease-in-out .4s;
+				}
 			}
 			position:relative;
 			padding:0.5rem;
 			display: inline-block;
 			&:hover{
-				background:red;
+				background:white;
 			}
 			
 		}
@@ -35,6 +41,8 @@
 				position:absolute;
 				display:none;
 				left:0;
+				border: 1px solid gray;
+				background:rgb(221,221,221);
 				.sub-menu-item{
 					display:block;
 				}
