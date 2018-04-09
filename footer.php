@@ -1,5 +1,25 @@
-<footer class="mt-5 bg-light">
 
+<footer class="mt-5 bg-light">
+  <div class="contacto">
+    <h1>¿Quieres contactarnos?</h1>
+    <div class="contacto-conte">
+    <form class="form-group">
+      <div class="form-control">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" placeholder="Nombre">  
+      </div>
+      <div class="form-control">
+        <label for="mail">Correo</label>
+        <input type="email" id="mail" placeholder="Correo">  
+      </div>
+      <div class="form-control">
+        <label for="mensaje">Mensaje</label>
+      ​  <textarea id="txtArea" placeholder="Dejanos tu mensaje" form="form-group"></textarea>
+      </div>
+         <button>Enviar</button>
+    </form>
+    </div>
+  </div>
   <div class="container-responsive">
 
     <?php if(is_active_sidebar('footer-widget-area')): ?>
