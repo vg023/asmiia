@@ -1,10 +1,24 @@
 <?php get_header(); ?>
-<div class="main">
-	<div class="mask">
-		<p>ASMIIA</p>
+<div class="slider">
+	<div class="slide">
+		<div class="mask">
+			<p>ASMIIA</p>
+		</div>
+		<img src="<?php bloginfo('template_url');?>/theme/img/microsco.jpeg">
 	</div>
+	<div class="slide">
+		<div class="mask">
+			<p>ASMIA</p>
+		</div>
+		<img src="<?php bloginfo('template_url');?>/theme/img/microsco.jpeg">
+	</div>
+	<div class="slide">
+		<div class="mask">
+			<p>ASMI</p>
+		</div>
 	<img src="<?php bloginfo('template_url');?>/theme/img/microsco.jpeg">
 </div>
+	</div>
 <div class="quienes container-flex">
 	<h1>¿quienes somos?</h1>
 	<hr>

@@ -1,4 +1,4 @@
-.main{
+.slider{
 	position:relative;
 	.mask{
 		position:absolute;
@@ -15,9 +15,11 @@
 			color:white;
 			font-size:5rem;
 			height:100%;
+			position: absolute;
 		}
 	}
 	img{
+		position:relative;
 		height: 100vh;
 		width: 100%;
 	}
