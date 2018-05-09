@@ -15,11 +15,11 @@
 
 <body <?php body_class(); ?>>
 
-<nav id="nav-main">
-  <div class="log">
-    <img src="<?php bloginfo("template_url");?>/theme/img/logo3.png" alt="">
+<nav id="nav-main" class="container-flex">
+  <div class="logo">
+    <img src="<?php bloginfo("template_url");?>/theme/img/logo-1.png" alt="">
   </div>
-  <ul id="menu">
+  <ul id="menu" class="">
     <li class="menu-item"><a href="">home</a></li>
     <li class="menu-item"><a href="">¿Quienes somos?</a></li>
     <li class="menu-item"><a href="">Contactanos</a></li>
