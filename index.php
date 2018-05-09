@@ -17,8 +17,8 @@
 			<p>ASMI</p>
 		</div>
 	<img src="<?php bloginfo('template_url');?>/theme/img/microsco.jpeg">
-</div>
 	</div>
+</div>
 <div class="quienes container-flex">
 	<h1>¿quienes somos?</h1>
 	<hr>

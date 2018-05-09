@@ -19,8 +19,11 @@
   <div class="logo">
     <img src="<?php bloginfo("template_url");?>/theme/img/logo-1.png" alt="">
   </div>
-  <ul id="menu" class="">
-    <li class="menu-item"><a href="">home</a></li>
+
+   <ul id="menu" class="">
+      <?php wp_nav_menu( 'menu2' ); ?>
+
+<!--     <li class="menu-item"><a href="">home</a></li>
     <li class="menu-item"><a href="">¿Quienes somos?</a></li>
     <li class="menu-item"><a href="">Contactanos</a></li>
     <li class="menu-item"><a href="">¿Cómo puedo aportar?</a></li>
@@ -29,7 +32,7 @@
         <li class="sub-menu-item"><a href="">convocatorias</a></li>
         <li class="sub-menu-item"><a href="">Enlace</a></li>
         <li class="sub-menu-item"><a href="">Blog</a></li>
-      </ul>
+ -->      </ul>
     </li>
   </ul>    
 </nav>
