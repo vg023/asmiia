@@ -36,14 +36,39 @@
       	<h1 class="titul-secc">Blog</h1>
         <?php get_template_part('loops/index-loop'); ?>
       </div><!-- /#content -->
-       <div id="content" role="main">
-        <h1 class="titul-secc">Articulos</h1>
-        <?php get_template_part('loops/index-loop'); ?>
+      <div id="content" role="main">
+	   	<?php
+	    	$args = array( 
+				'posts_per_page' => 3, 
+				'cat' => 5,
+			);
+	    	$the_query = new WP_Query( $args );
+
+				if ( $the_query->have_posts() ) :
+		?>
+		 <h1 class="titul-secc">Articulos</h1>
+		 
+		 <?php
+				while ( $the_query->have_posts() ) : $the_query->the_post();
+		?>
+		<div class="container">
+			<h1>
+				<a href="<?php the_permalink();?>"><?php the_title();?></a>
+			</h1>
+			<p>
+  				<?php the_excerpt();?>
+  			</p>
+		</div>
+		<?php
+			endwhile;
+			endif;
+			wp_reset_postdata();
+		?>
       </div><!-- /#content -->
-       <div id="content" role="main">
-        <h1 class="titul-secc">Noticias</h1>
-        <?php get_template_part('loops/index-loop'); ?>
-      </div><!-- /#content -->
+	   <div id="content" role="main">
+	    <h1 class="titul-secc">Noticias</h1>
+	    <?php get_template_part('loops/index-loop'); ?>
+	  </div><!-- /#content -->
     </div>
   </div><!-- /.row -->
 </div><!-- /.container-responsive -->
