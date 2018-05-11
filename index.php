@@ -29,18 +29,18 @@
 		</p>
 	</div>	
 </div>
-<div class="noticias container-felx">
-  <div class="row">
-    <div class="col-sm d-flex">
-      <div id="content" role="main">
+<div class="noticias">
+	<div class="container-fluid">
+	 <div class="row">
+      <div id="content" role="main" class="col-4">
       	<h1 class="titul-secc">Blog</h1>
         <?php get_template_part('loops/index-loop'); ?>
       </div><!-- /#content -->
-      <div id="content" role="main">
+      <div id="content" role="main" class="col-4">
 	   	<?php
 	    	$args = array( 
-				'posts_per_page' => 3, 
-				'cat' => 5,
+				'posts_per_page' => 1, 
+				'cat' => 2,
 			);
 	    	$the_query = new WP_Query( $args );
 
@@ -49,7 +49,7 @@
 		 <h1 class="titul-secc">Articulos</h1>
 		 
 		 <?php
-				while ( $the_query->have_posts() ) : $the_query->the_post();
+			while ( $the_query->have_posts() ) : $the_query->the_post();
 		?>
 		<div class="container">
 			<h1>
@@ -65,12 +65,13 @@
 			wp_reset_postdata();
 		?>
       </div><!-- /#content -->
-	   <div id="content" role="main">
+	   <div id="content" role="main" class="col-4">
 	    <h1 class="titul-secc">Noticias</h1>
 	    <?php get_template_part('loops/index-loop'); ?>
 	  </div><!-- /#content -->
-    </div>
-  </div><!-- /.row -->
+    </div>	
+	</div>
+   
 </div><!-- /.container-responsive -->
 <div class="parallax container-flex">	
 	<div class="para-conte container-flex">

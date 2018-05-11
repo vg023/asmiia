@@ -1,4 +1,4 @@
-$(document).ready(function(){
+    $(document).ready(function(){
 	$(window).on("scroll",function(e){
 		if($(window).scrollTop()>200){
 			$('#nav-main').fadeOut('slow');
@@ -6,10 +6,10 @@ $(document).ready(function(){
 			$('#nav-main').fadeIn('fast');
 		}
 	});
-	$(".trigger").on("mouseenter",function(e){
-		$('.sub-menu').show();
+	$(".menu-item-has-children").on("mouseenter",function(e){
+		$(this).children('.sub-menu').show();
 	});
-	$(".trigger").on("mouseleave",function(e){
+	$(".menu-item-has-children").on("mouseleave",function(e){
 		$('.sub-menu').hide();
 	});
 	console.log($(window).innerHeight());

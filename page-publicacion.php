@@ -6,8 +6,8 @@ Template Name: Articulos
 <?php get_header(); ?>
 <?php 
 $args = array( 
-		'posts_per_page' => 2, 
-		'cat' => '5',
+		'posts_per_page' => -1, 
+		'cat' => 2,
 	);
 $query = new WP_Query($args)
 ?>
