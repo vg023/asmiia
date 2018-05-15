@@ -1,13 +1,13 @@
 <?php
 /*
-Template Name: Articulos
+Template Name: Blog
 */
 ?>
 <?php get_header(); ?>
 <?php 
 $args = array( 
 		'posts_per_page' => -1, 
-		'cat' => 'articulos',
+		'cat' => 'blog',
 	);
 $query = new WP_Query($args)
 ?>

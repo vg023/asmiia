@@ -33,41 +33,15 @@
 	<div class="container-fluid">
 	 <div class="row">
       <div id="content" role="main" class="col-4">
-      	<h1 class="titul-secc">Blog</h1>
-        <?php get_template_part('loops/index-loop'); ?>
+      	<h1 class="titul-secc"><a href="<?php get_template_directory_uri(); ?>/page-publicacion.php">d</a></h1>
+        <?php get_template_part('loops/queryblo-loop'); ?>
       </div><!-- /#content -->
       <div id="content" role="main" class="col-4">
-	   	<?php
-	    	$args = array( 
-				'posts_per_page' => 1, 
-				'cat' => 2,
-			);
-	    	$the_query = new WP_Query( $args );
-
-				if ( $the_query->have_posts() ) :
-		?>
-		 <h1 class="titul-secc">Articulos</h1>
-		 
-		 <?php
-			while ( $the_query->have_posts() ) : $the_query->the_post();
-		?>
-		<div class="container">
-			<h1>
-				<a href="<?php the_permalink();?>"><?php the_title();?></a>
-			</h1>
-			<p>
-  				<?php the_excerpt();?>
-  			</p>
-		</div>
-		<?php
-			endwhile;
-			endif;
-			wp_reset_postdata();
-		?>
-      </div><!-- /#content -->
-	   <div id="content" role="main" class="col-4">
-	    <h1 class="titul-secc">Noticias</h1>
-	    <?php get_template_part('loops/index-loop'); ?>
+	  	<?php get_template_part('loops/queryart-loop'); ?>
+	  </div><!-- /#content -->
+	  <div id="content" role="main" class="col-4">
+	   	<h1 class="titul-secc">Noticias</h1>
+	    <?php get_template_part('loops/querypub-loop'); ?>
 	  </div><!-- /#content -->
     </div>	
 	</div>
