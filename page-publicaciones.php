@@ -7,7 +7,7 @@ Template Name: Publicaciones
 <?php 
 $args = array( 
 		'posts_per_page' => -1, 
-		'cat' => 'publicaciones',
+		'cat' => 5,
 	);
 $query = new WP_Query($args)
 ?>

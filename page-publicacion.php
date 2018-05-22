@@ -7,7 +7,7 @@ Template Name: Articulos
 <?php 
 $args = array( 
 		'posts_per_page' => -1, 
-		'cat' => 'articulos',
+		'cat' => 4,
 	);
 $query = new WP_Query($args)
 ?>

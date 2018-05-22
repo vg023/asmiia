@@ -7,7 +7,7 @@ Template Name: Blog
 <?php 
 $args = array( 
 		'posts_per_page' => -1, 
-		'cat' => 'blog',
+		'cat' => 2,
 	);
 $query = new WP_Query($args)
 ?>

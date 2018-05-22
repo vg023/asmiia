@@ -1,33 +1,45 @@
 <?php get_header(); ?>
-<div class="slider">
-	<div class="slide">
-		<div class="mask">
-			<p>ASMIIA</p>
-		</div>
-		<img src="<?php bloginfo('template_url');?>/theme/img/microsco.jpeg">
+</div>
+<?php
+	$args = array (
+		'posts_per_page' => 3,
+		'post_type' => 'post',
+		'order_by' => 'date',
+	);
+	
+	$lequery = new WP_Query( $args );
+?>
+<?php
+	if ( $lequery->have_posts() ) :
+?>
+	<div class="prueba">
+<?php
+	while ( $lequery->have_posts() ) : $lequery->the_post();  	
+?>
+	<div class="pruebas">
+		<h1><?php the_title();?></h1>
+		<p><?php the_excerpt(); ?></p>
+		<?php the_post_thumbnail(); ?>
 	</div>
-	<div class="slide">
-		<div class="mask">
-			<p>ASMIA</p>
-		</div>
-		<img src="<?php bloginfo('template_url');?>/theme/img/microsco.jpeg">
-	</div>
-	<div class="slide">
-		<div class="mask">
-			<p>ASMI</p>
-		</div>
-	<img src="<?php bloginfo('template_url');?>/theme/img/microsco.jpeg">
-	</div>
+<?php
+	endwhile;
+	endif;
+// Reset Post Data
+	wp_reset_postdata();
+?>
 </div>
 <div class="quienes container-flex">
 	<h1>¿quienes somos?</h1>
 	<hr>
 	<i class="fa fa-angle-double-down flecha-abajo"></i>
-	<div class="quienes-conte">
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores error, quibusdam laudantium illum enim ratione distinctio, dolore fuga assumenda eos ullam quod eveniet, tenetur, possimus vero. Labore impedit quam quaerat veniam recusandae possimus totam, autem repellendus, delectus doloremque aliquam deleniti sapiente nobis accusamus harum perspiciatis in omnis. Maxime obcaecati, modi.
-		</p>
-	</div>	
+	<section class="quienes-conte">
+		<h1>“Asociación Mexicana de Investigación Interdisciplinaria”</h1>
+		<h1>ASMIIA</h1>
+		<h2>MISION</h2>
+		<?php the_field('mision',104);?> 
+		<h2>VISION</h2>
+		<?php the_field('vision',104); ?>	
+	</section>	
 </div>
 <div class="noticias">
 	<div class="container-fluid">

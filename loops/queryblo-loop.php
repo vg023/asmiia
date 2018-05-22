@@ -1,7 +1,7 @@
 	<?php
 	    	$args = array( 
 				'posts_per_page' => 3, 
-				'cat' => 'blog',
+				'cat' => 2,
 			);
 	    	$the_query = new WP_Query( $args );
 

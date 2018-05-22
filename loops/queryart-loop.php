@@ -1,7 +1,7 @@
 	<?php
 	    	$args = array( 
 				'posts_per_page' => 3, 
-				'cat' => 'articulos',
+				'cat' => 4,
 			);
 	    	$the_query = new WP_Query( $args );
 
@@ -24,3 +24,5 @@
 			endif;
 			wp_reset_postdata();
 		?>
+
+	
