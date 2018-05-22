@@ -80,9 +80,19 @@ if ( ! function_exists( 'b4st_post_date' ) ) {
 	}
 }
 
-if ( ! function_exists('b4st_excerpt_more') ) {
-	function b4st_excerpt_more() {
-		return '&hellip;</p><p><a class="btn btn-primary" href="'. get_permalink() . '">' . __('Continue reading', 'b4st') . ' <i class="fas fa-arrow-right"></i>' . '</a></p>';
-	}
-}
+// if ( ! function_exists('b4st_excerpt_more') ) {
+// 	function b4st_excerpt_more() {
+// 		return '&hellip;</p><p><a href="'. get_permalink() . '">' . __('Continue reading', 'b4st') . ' <i class="fas fa-arrow-right"></i>' . '</a></p>';
+// 	}
+// }
+
 add_filter('excerpt_more', 'b4st_excerpt_more');
+
+if(! function_exists ('b4st_excerpt_length') ) {
+
+function b4st_excerpt_length( $length ) {
+	return 20;
+}
+}
+add_filter( 'excerpt_length', 'b4st_excerpt_length', 999 );
+?>

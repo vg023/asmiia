@@ -20,8 +20,7 @@ $query = new WP_Query($args)
   	<p>
   		<?php the_excerpt();?>
   	</p>
-  </div>
-
+    </div>
 <?php endwhile;
 	endif; 
 	wp_reset_postdata();
