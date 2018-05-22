@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-</div>
 <?php
 	$args = array (
 		'posts_per_page' => 3,
