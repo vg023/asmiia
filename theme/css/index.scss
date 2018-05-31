@@ -21,6 +21,30 @@
 		width:100%;
 	}
 }
+.pruebas-wrap{
+	.prueba{
+		.slick-arrow{
+			position:absolute;
+			height: 2rem;
+			top:0;
+			bottom:0;
+			margin:auto;
+		}
+		.slick-prev{
+			left:5%;
+		}
+		.slick-next{
+			left:95%;
+		}
+		.pruebas{
+			display: flex;
+			height: 100vh;
+			align-items:center;
+			justify-content: center;
+			flex-direction: column;
+		}
+	}
+}
 .quienes{
 	overflow:hidden;
 	height:7rem;

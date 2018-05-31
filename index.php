@@ -1,31 +1,33 @@
 <?php get_header(); ?>
-<?php
-	$args = array (
-		'posts_per_page' => 3,
-		'post_type' => 'post',
-		'order_by' => 'date',
-	);
-	
-	$lequery = new WP_Query( $args );
-?>
-<?php
-	if ( $lequery->have_posts() ) :
-?>
-	<div class="prueba">
-<?php
-	while ( $lequery->have_posts() ) : $lequery->the_post();  	
-?>
-	<div class="pruebas">
-		<h1><?php the_title();?></h1>
-		<p><?php the_excerpt(); ?></p>
-		<?php the_post_thumbnail(); ?>
+<div class="pruebas-wrap">
+	<?php
+		$args = array (
+			'posts_per_page' => 3,
+			'post_type' => 'post',
+			'order_by' => 'date',
+		);
+		
+		$lequery = new WP_Query( $args );
+	?>
+	<?php
+		if ( $lequery->have_posts() ) :
+	?>
+		<div class="prueba">
+	<?php
+		while ( $lequery->have_posts() ) : $lequery->the_post();  	
+	?>
+		<div class="pruebas">
+			<h1><a href="<?php the_permalink();?>"><?php the_title();?></a></h1>
+			<p><?php the_excerpt(); ?></p>
+			<?php the_post_thumbnail(); ?>
+		</div>
+	<?php
+		endwhile;
+		endif;
+	// Reset Post Data
+		wp_reset_postdata();
+	?>
 	</div>
-<?php
-	endwhile;
-	endif;
-// Reset Post Data
-	wp_reset_postdata();
-?>
 </div>
 <div class="quienes container-flex">
 	<h1>¿quienes somos?</h1>
