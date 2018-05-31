@@ -17,6 +17,8 @@
 			<p>
   				<?php the_excerpt();?>
   			</p>
+  			<a class="boton-noticias" href="<?php the_permalink();?>">¿Quieres leer más?</a>
+
 		</div>
 		<?php
 			endwhile;

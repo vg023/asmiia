@@ -46,23 +46,25 @@
 .noticias{
 	padding-top:5px;
 	.row{
-		.col-sm{
-			box-shadow: 0 5px gray;
 			#content{
 				border: 1px solid black;
 				box-shadow: 0 5px gray;
+
 				.container{
 					box-shadow: 0 2px black;
-					padding:1rem;
-					.titul-secc{
-						text-align:center;
-						text-transform: uppercase;
-					}	
+					padding:1rem 0;
+
+					.boton-noticias{
+						color:red;
+					}
+				}
+				.titul-secc{
+					text-align:center;
+					text-transform: uppercase;		
 				}			
 			}
 		}
 	}
-}
 .parallax{
 	background-image:url('../img/para2.jpg');
     background-attachment: fixed;
@@ -88,7 +90,7 @@
     		text-transform:uppercase;
     	}
     	p{
-    		color:green;
+    		color:white;
     		font-weight:bold;
     	}
     }

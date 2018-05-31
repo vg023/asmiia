@@ -86,13 +86,13 @@ if ( ! function_exists( 'b4st_post_date' ) ) {
 // 	}
 // }
 
-add_filter('excerpt_more', 'b4st_excerpt_more');
+// add_filter('excerpt_more', 'b4st_excerpt_more');
 
 if(! function_exists ('b4st_excerpt_length') ) {
 
 function b4st_excerpt_length( $length ) {
-	return 20;
-}
+	return 25;
+	}
 }
 add_filter( 'excerpt_length', 'b4st_excerpt_length', 999 );
 ?>
