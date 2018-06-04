@@ -63,22 +63,14 @@
 <div class="parallax container-flex">	
 	<div class="para-conte container-flex">
 		<h1>¿Como puedo aportar?</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<div class="mask"></div>
-	</div>
-	<div class="para-conte container-flex">
-		<h1>¿Como puedo aportar?</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<div class="container">
+			<p>Haciendo deposito o transferencia con los siguientes datos</p>
+			<ul class="lista-aporte">
+				<li><span>Institucion:</span> Bancomer</li>
+				<li><span>Cuenta:</span> 00001115555</li>
+				<li><span>Razon social:</span> ASMIIA</li>
+			</ul>
+		</div>
 		<div class="mask"></div>
 	</div>
 </div>
