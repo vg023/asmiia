@@ -7,6 +7,14 @@
 
 				if ( $the_query->have_posts() ) :
 		?>
+		<?php
+      		$category_id = get_cat_ID( 'blog' );
+      		$category_link = get_category_link( $category_id );
+		?>
+      	<h1 class="titul-secc">
+      		<a href="<?php echo esc_url( $category_link ); ?>" title="Blog">blog</a>
+      	</h1>
+
 		 <?php
 			while ( $the_query->have_posts() ) : $the_query->the_post();
 		?>

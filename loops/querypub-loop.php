@@ -1,12 +1,20 @@
 	<?php
 	    	$args = array( 
 				'posts_per_page' => 3, 
-				'cat' => 5,
+				'cat' => 4,
 			);
 	    	$the_query = new WP_Query( $args );
 
 				if ( $the_query->have_posts() ) :
-		?>		 
+		?>
+		<?php
+      		$category_id = get_cat_ID( 'publicaciones' );
+      		$category_link = get_category_link( $category_id );
+		?>
+      	<h1 class="titul-secc">
+      		<a href="<?php echo esc_url( $category_link ); ?>" title="publicaciones">publicaciones</a>
+      	</h1>
+		 
 		 <?php
 			while ( $the_query->have_posts() ) : $the_query->the_post();
 		?>

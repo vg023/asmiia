@@ -29,9 +29,25 @@
 			top:0;
 			bottom:0;
 			margin:auto;
+			background: none;
+    		border-style: none;
+    		border: 1px solid black;
+    		width: 2rem;
+    		&:focus {
+  				outline: none;
+			}
+			&:hover{
+				border: 1px solid white;
+				color: rgba(235, 0, 0, .5);;
+			}
+		}
+		.fa-arrow-right{
+			color:red;
+			right: 1vw;			
 		}
 		.slick-prev{
 			left:5%;
+			z-index: +1;
 		}
 		.slick-next{
 			left:95%;
@@ -42,20 +58,56 @@
 			align-items:center;
 			justify-content: center;
 			flex-direction: column;
+			position: relative;
+			img{
+				position: absolute;
+				width:100%;
+				height: auto;
+				z-index: -1;
+			}
+			.titul{
+				position: absolute;
+				left:4rem;
+				top:8rem;
+				background: rgba(54, 53, 33, 0.16);
+				.titul-slide{
+					text-transform: uppercase;
+					a{
+						color:white;
+						text-decoration:none;
+					}
+				} 
+			}
+			.conte-s{
+				position: absolute;
+				right:4rem;
+				bottom:8rem;
+				background: rgba(54, 53, 33, 0.16);
+				.conte-slide{
+					text-transform: uppercase;
+					a{
+						color:white;
+						text-decoration:none;
+					}
+				} 
+			}
 		}
 	}
 }
 .quienes{
 	overflow:hidden;
 	height:7rem;
-	border: 1px solid black;
-	box-shadow:0 5px gray;
+	border: 1px solid white;
+	box-shadow:0 5px white;
+	background: #000;
+	color: white;
 	h1{
 		text-transform: uppercase;
 		text-align:center;
 	}
 	.flecha-abajo{
 		text-align:center;
+		color: white;
 	}
 	.svg-inline--fa.fa-w-10{
 		width:100%;
@@ -72,14 +124,19 @@
 	.row{
 			#content{
 				border: 1px solid black;
-				box-shadow: 0 5px gray;
+				box-shadow: 0 5px black;
+				color:black;
+				background: rgba(211,211,211,0.7);
+				a{
+					color:black;
 
+				}
 				.container{
 					box-shadow: 0 2px black;
 					padding:1rem 0;
 
 					.boton-noticias{
-						color:red;
+						color:black;
 					}
 				}
 				.titul-secc{

@@ -17,8 +17,12 @@
 		while ( $lequery->have_posts() ) : $lequery->the_post();  	
 	?>
 		<div class="pruebas">
-			<h1><a href="<?php the_permalink();?>"><?php the_title();?></a></h1>
-			<p><?php the_excerpt(); ?></p>
+			<div class="titul">
+				<h1 class="titul-slide"><a href="<?php the_permalink();?>"><?php the_title();?></a></h1>
+			</div>
+			<div class="conte-s">
+				<p class="conte-slide"><?php the_excerpt(); ?></p>
+			</div>
 			<?php the_post_thumbnail(); ?>
 		</div>
 	<?php
@@ -34,26 +38,34 @@
 	<hr>
 	<i class="fa fa-angle-double-down flecha-abajo"></i>
 	<section class="quienes-conte">
-		<h1>“Asociación Mexicana de Investigación Interdisciplinaria”</h1>
-		<h1>ASMIIA</h1>
-		<h2>MISION</h2>
-		<?php the_field('mision',104);?> 
-		<h2>VISION</h2>
-		<?php the_field('vision',104); ?>	
+		<div class="quienes-intro">
+			<h1>“Asociación Mexicana de Investigación Interdisciplinaria”</h1>
+			<h1>ASMIIA</h1>	
+		</div>
+		<div class="mision">
+			<h2>MISION</h2>
+			<h3>
+				<?php the_field('mision',16);?>	
+			</h3> 	
+		</div>
+		<div class="vision">
+			<h2>VISION</h2>
+			<h3>
+				<?php the_field('vision',16); ?>	
+			</h3>	
+		</div>			
 	</section>	
 </div>
 <div class="noticias">
 	<div class="container-fluid">
 	 <div class="row">
       <div id="content" role="main" class="col-4">
-      	<h1 class="titul-secc"><a href="<?php get_template_directory_uri(); ?>/page-publicacion.php">d</a></h1>
-        <?php get_template_part('loops/queryblo-loop'); ?>
+ 	    <?php get_template_part('loops/queryblo-loop'); ?>
       </div><!-- /#content -->
       <div id="content" role="main" class="col-4">
 	  	<?php get_template_part('loops/queryart-loop'); ?>
 	  </div><!-- /#content -->
 	  <div id="content" role="main" class="col-4">
-	   	<h1 class="titul-secc">Noticias</h1>
 	    <?php get_template_part('loops/querypub-loop'); ?>
 	  </div><!-- /#content -->
     </div>	
