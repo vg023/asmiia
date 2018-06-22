@@ -14,23 +14,30 @@
       	<h1 class="titul-secc">
       		<a href="<?php echo esc_url( $category_link ); ?>" title="articulos">articulos</a>
       	</h1>
-
+		<div class="container-fluid">
+			<div class="row">
 		 <?php
 			while ( $the_query->have_posts() ) : $the_query->the_post();
 		?>
-		<div class="container">
-			<h1>
-				<a href="<?php the_permalink();?>"><?php the_title();?></a>
-			</h1>
-			<p>
-  				<?php the_excerpt();?>
-  			</p>
-  			<a class="boton-noticias" href="<?php the_permalink();?>">¿Quieres leer más?</a>
-		</div>
+		
+			
+				<div class="col">
+					<h1>
+						<a href="<?php the_permalink();?>"><?php the_title();?></a>
+					</h1>
+					<p>
+  						<?php the_excerpt();?>
+  					</p>
+  					
+  					<a class="boton-noticias" href="<?php the_permalink();?>">¿Quieres leer más?</a>
+				</div>	
+			
+		
 		<?php
 			endwhile;
 			endif;
 			wp_reset_postdata();
 		?>
-
+		</div>
+	</div>
 	
