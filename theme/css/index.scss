@@ -131,19 +131,41 @@
 .noticias{
 	padding-top:5px;
 	.row{
+		.col{
+			p{
+				color: gray;
+			}
+			h1{
+				a{
+
+				}
+			}
+			.masc{
+				img{
+					width:100%;
+					height: auto;
+				}
+			}
+		}
+		.blog{
+			background:rgba(47,79,79,0.9);	
+		}
 			#content{
 				border: 1px solid black;
 				box-shadow: 0 5px black;
-				color:black;
-				background:rgba(119,136,153,0.9);
+				color:white;
 				a{
-					color:black;
-
+					text-transform: uppercase;
+					color:rgba(119,136,153,0.9);
 				}
 				.container{
 					box-shadow: 0 2px black;
 					padding:1rem 0;
-
+					color:black;
+					img{
+						width:100%;
+						height: auto;
+					}
 					.boton-noticias{
 						color:black;
 					}

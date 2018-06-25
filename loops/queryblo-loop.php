@@ -26,6 +26,9 @@
   				<?php the_excerpt();?>
   			</p>
   			<a class="boton-noticias" href="<?php the_permalink();?>">¿Quieres leer más?</a>
+			<div class="masc">
+				<?php the_post_thumbnail();?>	
+			</div>
 		</div>
 		<?php
 			endwhile;

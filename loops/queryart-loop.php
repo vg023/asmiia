@@ -20,7 +20,6 @@
 			while ( $the_query->have_posts() ) : $the_query->the_post();
 		?>
 		
-			
 				<div class="col">
 					<h1>
 						<a href="<?php the_permalink();?>"><?php the_title();?></a>
@@ -30,9 +29,10 @@
   					</p>
   					
   					<a class="boton-noticias" href="<?php the_permalink();?>">¿Quieres leer más?</a>
+  					<div class="masc">
+						<?php the_post_thumbnail();?>	
+					</div>
 				</div>	
-			
-		
 		<?php
 			endwhile;
 			endif;
