@@ -66,3 +66,97 @@ function generales() {
 
 }
 add_action( 'init', 'generales', 0 );
+
+// Register Custom Post Type
+function publiaciones_post_type() {
+
+	$labels = array(
+		'name'                  => _x( 'Publicaciones', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Publicacion', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Publicaciones', 'text_domain' ),
+		'name_admin_bar'        => __( 'Añadir nuevo', 'text_domain' ),
+		'archives'              => __( 'Archivo de elementos', 'text_domain' ),
+		'attributes'            => __( 'Atributos de Elemento', 'text_domain' ),
+		'parent_item_colon'     => __( 'Elemento Padre', 'text_domain' ),
+		'all_items'             => __( 'Todos los Elementos', 'text_domain' ),
+		'add_new_item'          => __( 'Añadir nuevo Elemento', 'text_domain' ),
+		'add_new'               => __( 'Añadir Nuevo', 'text_domain' ),
+		'new_item'              => __( 'Nuevo Elemento', 'text_domain' ),
+		'edit_item'             => __( 'Editar elemento', 'text_domain' ),
+		'update_item'           => __( 'Actualizar elemento', 'text_domain' ),
+		'view_item'             => __( 'Ver elemento', 'text_domain' ),
+		'view_items'            => __( 'Ver elementos', 'text_domain' ),
+		'search_items'          => __( 'Buscar elementos', 'text_domain' ),
+		'not_found'             => __( 'No encontradp', 'text_domain' ),
+		'not_found_in_trash'    => __( 'No encontrado en Trash', 'text_domain' ),
+		'featured_image'        => __( 'Imagen Destacada', 'text_domain' ),
+		'set_featured_image'    => __( 'Colocar Imagen Destacada', 'text_domain' ),
+		'remove_featured_image' => __( 'Remover Imagen Destacada', 'text_domain' ),
+		'use_featured_image'    => __( 'Usar Como Imagen Destacada', 'text_domain' ),
+		'insert_into_item'      => __( 'Insertar En Elemento', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Añadido a este elemento', 'text_domain' ),
+		'items_list'            => __( 'Lista de Elementos', 'text_domain' ),
+		'items_list_navigation' => __( 'Lista de Navegacion de Elementos', 'text_domain' ),
+		'filter_items_list'     => __( 'Filtrar Lista de Elementos', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'Publicacion', 'text_domain' ),
+		'description'           => __( 'Post Type Description', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'thumbnail' ),
+		'taxonomies'            => array( 'category', 'post_tag', '' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'publicaciones', $args );
+
+}
+add_action( 'init', 'publiaciones_post_type', 0 );
+// Register Custom Taxonomy
+function libros_taxonomy() {
+
+	$labels = array(
+		'name'                       => _x( 'Libros', 'Taxonomy General Name', 'text_domain' ),
+		'singular_name'              => _x( 'Libro', 'Taxonomy Singular Name', 'text_domain' ),
+		'menu_name'                  => __( 'Libro', 'text_domain' ),
+		'all_items'                  => __( 'Todos los Libros', 'text_domain' ),
+		'parent_item'                => __( 'Libro Padre', 'text_domain' ),
+		'parent_item_colon'          => __( 'Libro Padre:', 'text_domain' ),
+		'new_item_name'              => __( 'Nombre Del Nuevo Libro', 'text_domain' ),
+		'add_new_item'               => __( 'Añadir Nuevo Libro', 'text_domain' ),
+		'edit_item'                  => __( 'Editar Libro', 'text_domain' ),
+		'update_item'                => __( 'Actualizar Libro', 'text_domain' ),
+		'view_item'                  => __( 'Ver Libro', 'text_domain' ),
+		'separate_items_with_commas' => __( 'Separar con commas', 'text_domain' ),
+		'add_or_remove_items'        => __( 'Añadir o remover Libros', 'text_domain' ),
+		'choose_from_most_used'      => __( 'Escoger De Los Mas Usados', 'text_domain' ),
+		'popular_items'              => __( 'Libros Populares', 'text_domain' ),
+		'search_items'               => __( 'Buscar Libros', 'text_domain' ),
+		'not_found'                  => __( 'No Encontrado', 'text_domain' ),
+		'no_terms'                   => __( 'No Libro', 'text_domain' ),
+		'items_list'                 => __( 'Lista de Libros', 'text_domain' ),
+		'items_list_navigation'      => __( 'Lista De Navegacion De Libros', 'text_domain' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => true,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'libros', array( 'publicaciones', '' ), $args );
+
+}
+add_action( 'init', 'libros_taxonomy', 0 );

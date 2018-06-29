@@ -7,7 +7,8 @@ Template Name: Publicaciones
 <?php 
 $args = array( 
 		'posts_per_page' => -1, 
-		'cat' => 5,
+		'taxonomy' => 'libros',
+    'post_type' =>'Publicaciones'
 	);
 $query = new WP_Query($args)
 ?>
@@ -17,6 +18,13 @@ $query = new WP_Query($args)
   	<h1>
   		<a href="<?php the_permalink(); ?>"><?php the_title();?></a>
   	</h1>
+    <p><?php the_field('nombre');?></p>
+    <p><?php the_field('autor');?></p>
+    <p><?php the_field('isbn');?></p>
+  <img src="<?php bloginfo('template_url')?>/<?php the_field('imagen-de-portada');?>">
+  
+ <?php $imagen = get_field('imagen-de-portada'); ?>
+  <img src="<?php echo $imagen['url']; ?>">
   	<p>
   		<?php the_excerpt();?>
   	</p>
