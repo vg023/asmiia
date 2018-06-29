@@ -74,10 +74,12 @@
 					text-transform: uppercase;
 					font-weight: bolder;
 					a{
-					color: rgba(119,136,153,0.9);
-						text-decoration:none;
+					    color: rgb(119,136,153);
+   						text-decoration: none;
+    					text-shadow: 1px 1px 1px black;
 						&:hover{
-							color:rgba(0,0,0,0.8);
+							color:rgb(0,0,0);
+							text-shadow: 1px 1px 1px white;
 						}
 					}
 				} 
@@ -90,13 +92,14 @@
 				&:hover{
 						background: rgba(white,0.5);
 						p{
-							color:
-							black;
+							color:black;
+							text-shadow: 1px 1px 1px white;
 						}
 					}
 				p{
 					text-transform: uppercase;		
 					color:white;
+					text-shadow: 1px 1px 1px #000;
 					text-decoration:none;
 				}
 			}
@@ -149,9 +152,15 @@
 		}
 		.blog{
 			background:rgba(47,79,79,0.9);	
+			a{
+				color:beige;
+				text-shadow: -1px 3px #000;
+				font-weight:bold;
+			}
 		}
 		.art{
 			background:rgba(112,128,144,0.9);
+
 		}
 		.pub{
 			background:rgba(105,105,105,0.9);
@@ -159,15 +168,13 @@
 			#content{
 				border: 1px solid black;
 				box-shadow: 0 5px black;
-				color:white;
-				a{
+					a{
 					text-transform: uppercase;
-					color:rgba(119,136,153,0.9);
+					
 				}
 				.container{
 					box-shadow: 0 2px black;
 					padding:1rem 0;
-					color:black;
 					img{
 						width:100%;
 						height: auto;
