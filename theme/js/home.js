@@ -1,5 +1,9 @@
 $(document).ready(function(){
-	$('.quienes').on("click",function(){
+	$('.flecha-abajo').on("click",function(){
 		$('.quienes').toggleClass('comprimido');
 	});
+	$('.flecha-arriba').on("click",function(){
+		$('.quienes').toggleClass('comprimido');
+	});
+	
 });

@@ -54,6 +54,7 @@
 				<?php the_field('vision',16); ?>	
 			</h3>	
 		</div>			
+		<i class="fa fa-angle-double-up flecha-arriba"></i>
 	</section>	
 </div>
 <div class="noticias">
