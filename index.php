@@ -40,7 +40,7 @@
 	<section class="quienes-conte">
 		<div class="quienes-intro">
 			<h1>“Asociación Mexicana de Investigación Interdisciplinaria”</h1>
-			<h1>ASMIIA</h1>	
+			<h2>ASMIIA</h2>	
 		</div>
 		<div class="mision">
 			<h2>MISION</h2>

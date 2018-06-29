@@ -67,17 +67,19 @@
 			}
 			.titul{
 				position: absolute;
-				left:4rem;
-				top:8rem;
+				left:2rem;
+				top:5rem;
 				
 				.titul-slide{
 					text-transform: uppercase;
 					font-weight: bolder;
+					font-size: 3.5rem;
 					a{
 					    color: rgb(119,136,153);
    						text-decoration: none;
     					text-shadow: 1px 1px 1px black;
 						&:hover{
+							font-weight: bold;
 							color:rgb(0,0,0);
 							text-shadow: 1px 1px 1px white;
 						}
@@ -85,22 +87,26 @@
 				} 
 			}
 			.conte-s{
+				width: 80%;
 				position: absolute;
-				right:4rem;
-				bottom:8rem;
+				bottom:3rem;
 				background: rgba(0,0,0,0.5);
 				&:hover{
 						background: rgba(white,0.5);
 						p{
+							
 							color:black;
 							text-shadow: 1px 1px 1px white;
 						}
 					}
 				p{
+					font-weight: bold;
 					text-transform: uppercase;		
 					color:white;
 					text-shadow: 1px 1px 1px #000;
 					text-decoration:none;
+					font-size: 2rem;
+
 				}
 			}
 		}
@@ -108,14 +114,36 @@
 }
 .quienes{
 	overflow:hidden;
-	height:7rem;
+	height:11rem;
 	border: 1px solid white;
 	box-shadow:0 5px white;
 	background: rgba(0,0,0,0.8);
 	color: white;
+	padding: 1.5rem;
+	text-shadow: 1px 1px 1px #000;
+	.mision{
+		text-align: justify;
+		padding: 1.5rem 0;
+		h2{
+			text-align: left;
+		}
+	}
+	.vision{
+		text-align: justify;
+		padding: 1.5rem 0;
+		h2{
+			text-align: left;
+		}
+	}
 	h1{
+		
 		text-transform: uppercase;
 		text-align:center;
+		font-size: 3.5rem;
+	}
+	h2{
+		text-align: center;
+		font-size: 2.5rem;
 	}
 	.flecha-abajo{
 		text-align:center;
@@ -123,6 +151,7 @@
 	}
 	.svg-inline--fa.fa-w-10{
 		width:100%;
+		font-size: 1.5rem;
 	}
 	.quienes-conte{
 		padding:1.5rem;
