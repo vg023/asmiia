@@ -3,7 +3,7 @@
 	<?php
 		$args = array (
 			'posts_per_page' => 3,
-			'post_type' => 'post',
+			'post_type' => array ('post','publicaciones'),	
 			'order_by' => 'date',
 		);
 		

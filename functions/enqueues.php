@@ -26,14 +26,8 @@ if ( ! function_exists('b4st_enqueues') ) {
 
 		 wp_register_style('index-css', get_template_directory_uri() . '/theme/css/index.css', false, null);
 		wp_enqueue_style('index-css');
-		if(is_page('publicaciones'))
-		 {
-		 	wp_register_style('publicaciones-css', get_template_directory_uri() . '/theme/css/publicaciones.css', false, null);
-			wp_enqueue_style('publicaciones-css');
-
-		}else{
-
-		}
+		wp_register_style('publicacion-css', get_template_directory_uri() . '/theme/css/publicacion.css', false, null);
+		wp_enqueue_style('publicacion-css');
 		// Scripts
 
 		wp_register_script('font-awesome-config-js', get_template_directory_uri() . '/theme/js/font-awesome-config.js', false, null, null);
