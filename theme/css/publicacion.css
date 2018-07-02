@@ -1,2 +1,15 @@
-.conte-pub h2{color:red}
-/*# sourceMappingURL=publicacion.css.map */
+.title-pub h1 {
+  padding-top: 100px;
+}
+
+.nav-main {
+  margin-top: 100px;
+}
+
+.conte-pub h1 {
+  color: green;
+}
+
+.conte-pub h2 {
+  color: blue;
+}

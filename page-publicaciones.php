@@ -4,9 +4,9 @@ Template Name: Publicaciones
 */
 ?>
 <?php get_header(); ?>
-<?php 
-$args = array( 
-		'posts_per_page' => -1, 
+<?php
+$args = array(
+		'posts_per_page' => -1,
     'post_type' =>'Publicaciones'
 	);
 $query = new WP_Query($args)
@@ -19,7 +19,7 @@ $query = new WP_Query($args)
   	</h1>
     <p><?php the_field('nombre');?></p>
     <p><?php the_field('autor');?></p>
-    <p><?php the_field('isbn');?></p> 
+    <p><?php the_field('isbn');?></p>
  <?php $imagen = get_field('imagen-de-portada'); ?>
   <img src="<?php echo $imagen['url']; ?>">
   	<p>
@@ -28,7 +28,7 @@ $query = new WP_Query($args)
   </div>
 
 <?php endwhile;
-	endif; 
+	endif;
 	wp_reset_postdata();
 	?>
 
