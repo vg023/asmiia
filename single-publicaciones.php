@@ -31,7 +31,7 @@
 
         </p>
     </div>
-    <div class="reseña-libro col-12 ">
+    <div class="resena-libro col-lg-12 ">
       <p>
         <?php the_field('reseña_del_libro');?>
       </p>

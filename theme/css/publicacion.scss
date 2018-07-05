@@ -3,10 +3,9 @@
 	padding-top: 100px;
 };
 .nav-main{
-	margin-top: 100px;
-}
+};
 .image-libro{
-	padding: 5% 5% 5% 10%;
+	padding: 5%;
 };
 .info-libro{
 	padding-top: 10%;
@@ -14,11 +13,15 @@
 .info-libro li {
 	list-style: none;
 };
-.reseña-libro p {
-
-};
-.reseña-libro a {
+.resena-libro {
+	padding: 0% 5% 5% 5%;
 	text-align: center;
+};
+.resena-libro p {
+	text-align: justify;
+};
+.resena-libro a {
+
 };
 .conte-pub {
 };
