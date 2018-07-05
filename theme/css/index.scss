@@ -2,7 +2,7 @@
 	.slide{
 		position:relative;
 		.mask{
-		
+
 		p{
 			display:flex;
 			justify-content: center;
@@ -16,7 +16,7 @@
 	}
 
 	}
-	
+
 	img{
 		width:100%;
 	}
@@ -43,7 +43,7 @@
 		}
 		.fa-arrow-right{
 			color:red;
-			right: 1vw;			
+			right: 1vw;
 		}
 		.slick-prev{
 			left:5%;
@@ -69,22 +69,26 @@
 				position: absolute;
 				left:2rem;
 				top:5rem;
-				
+				padding: 20%;
+
 				.titul-slide{
+
 					text-transform: uppercase;
+					text-align: center;
 					font-weight: bolder;
-					font-size: 3.5rem;
+					font-size: 50px;
 					a{
 					    color: rgb(119,136,153);
    						text-decoration: none;
     					text-shadow: 1px 1px 1px black;
 						&:hover{
+
 							font-weight: bold;
 							color:rgb(0,0,0);
 							text-shadow: 1px 1px 1px white;
 						}
 					}
-				} 
+				}
 			}
 			.conte-s{
 				width: 80%;
@@ -94,14 +98,14 @@
 				&:hover{
 						background: rgba(white,0.5);
 						p{
-							
+
 							color:black;
 							text-shadow: 1px 1px 1px white;
 						}
 					}
 				p{
 					font-weight: bold;
-					text-transform: uppercase;		
+					text-transform: uppercase;
 					color:white;
 					text-shadow: 1px 1px 1px #000;
 					text-decoration:none;
@@ -121,27 +125,35 @@
 	color: white;
 	padding: 1.5rem;
 	text-shadow: 1px 1px 1px #000;
+
 	.mision{
 		text-align: justify;
-		padding: 1.5rem 0;
-		h2{
-			text-align: left;
+		padding: 5% ;
+		p{
+			margin-top: 20px;
+			font-size: 120%;
 		}
+
+
 	}
 	.vision{
 		text-align: justify;
-		padding: 1.5rem 0;
-		h2{
-			text-align: left;
+		padding: 5% ;
+		p{
+			margin-top: 30px;
+			font-size: 120%;
 		}
+
+
 	}
 	h1{
-		
+		text-align: justify;
 		text-transform: uppercase;
 		text-align:center;
 		font-size: 3.5rem;
 	}
 	h2{
+		text-align: justify;
 		text-align: center;
 		font-size: 2.5rem;
 	}
@@ -180,7 +192,7 @@
 			}
 		}
 		.blog{
-			background:rgb(47,79,79);	
+			background:rgb(47,79,79);
 			a{
 				color:beige;
 				text-shadow: 1px 1px 1px #000;
@@ -221,9 +233,9 @@
 				.titul-secc{
 					text-align:center;
 					a{
-						text-transform: uppercase;	
-					}		
-				}			
+						text-transform: uppercase;
+					}
+				}
 			}
 		}
 	}

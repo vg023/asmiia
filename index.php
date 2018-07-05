@@ -3,10 +3,10 @@
 	<?php
 		$args = array (
 			'posts_per_page' => 3,
-			'post_type' => array ('post','publicaciones'),	
+			'post_type' => array ('post','publicaciones'),
 			'order_by' => 'date',
 		);
-		
+
 		$lequery = new WP_Query( $args );
 	?>
 	<?php
@@ -14,7 +14,7 @@
 	?>
 		<div class="prueba">
 	<?php
-		while ( $lequery->have_posts() ) : $lequery->the_post();  	
+		while ( $lequery->have_posts() ) : $lequery->the_post();
 	?>
 		<div class="pruebas">
 			<div class="titul">
@@ -33,30 +33,48 @@
 	?>
 	</div>
 </div>
-<div class="quienes container-flex">
+
+
+
+<div class="quienes container-flex ">
 	<h1>¿quienes somos?</h1>
 	<hr>
 	<i class="fa fa-angle-double-down flecha-abajo"></i>
-	<section class="quienes-conte">
-		<div class="quienes-intro">
-			<h1>“Asociación Mexicana de Investigación Interdisciplinaria”</h1>
-			<h2>ASMIIA</h2>	
+	<section class="quienes-conte row">
+		<div class="quienes-intro container-fluid col-12">
+			<h2>“Asociación Mexicana de Investigación Interdisciplinaria”</h2>
+			<!--<h2>ASMIIA</h2>-->
 		</div>
-		<div class="mision">
-			<h2>MISION</h2>
-			<h3>
-				<?php the_field('mision',16);?>	
-			</h3> 	
+
+
+
+		<div class="mision col-lg-6 ">
+
+					<h2>MISION</h2>
+					<p>
+					<?php the_field('mision',16);?>
+					</p>
+
+ 		</div>
+
+
+
+		<div class="vision col-lg-6">
+
+				<h2>VISION</h2>
+					<p>
+					<?php the_field('vision',16); ?>
+					</p>
+
 		</div>
-		<div class="vision">
-			<h2>VISION</h2>
-			<h3>
-				<?php the_field('vision',16); ?>	
-			</h3>	
-		</div>			
-		<i class="fa fa-angle-double-up flecha-arriba"></i>
-	</section>	
+
+			<i class="fa fa-angle-double-up flecha-arriba"></i>
+ </section>
+
 </div>
+
+
+
 <div class="noticias">
 	<div class="container-fluid">
 	 <div class="row">
@@ -69,11 +87,11 @@
 	  <div id="content" class="pub col-12" role="main">
 	    <?php get_template_part('loops/querypub-loop'); ?>
 	  </div><!-- /#content -->
-    </div>	
+    </div>
 	</div>
-   
+
 </div><!-- /.container-responsive -->
-<div class="parallax container-flex">	
+<div class="parallax container-flex">
 	<div class="para-conte container-flex">
 		<h1>¿Como puedo aportar?</h1>
 		<div class="container">
