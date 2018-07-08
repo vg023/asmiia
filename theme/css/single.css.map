@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,EAAE,CACD,cAAc,CAAE,SAAS,CACzB,KAAK,CAAC,SAAS,CAEhB,CAAC,CACA,KAAK,CAAC,MAAM",
+"mappings": "AAAA,EAAE,CACD,cAAc,CAAE,SAAS,CACzB,KAAK,CAAC,SAAS,CAEhB,CAAC,CACA,KAAK,CAAC,MAAM,CAEb,GAAG,CACF,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI",
 "sources": ["single.scss"],
 "names": [],
 "file": "single.css"
