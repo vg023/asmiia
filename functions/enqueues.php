@@ -28,6 +28,10 @@ if ( ! function_exists('b4st_enqueues') ) {
 		wp_enqueue_style('index-css');
 		wp_register_style('publicacion-css', get_template_directory_uri() . '/theme/css/publicacion.css', false, null);
 		wp_enqueue_style('publicacion-css');
+		if(is_singular( 'post' )){
+			wp_register_style('single-css', get_template_directory_uri() . '/theme/css/single.css', false, null);
+			wp_enqueue_style('single-css');	
+		};
 		// Scripts
 
 		wp_register_script('font-awesome-config-js', get_template_directory_uri() . '/theme/js/font-awesome-config.js', false, null, null);

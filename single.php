@@ -9,8 +9,7 @@
       </div><!-- /#content -->
     </div>
 
-    <?php get_sidebar(); ?>
-
+   
   </div><!-- /.row -->
 </div><!-- /.container-responsive -->
 
