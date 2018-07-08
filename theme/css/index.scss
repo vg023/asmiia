@@ -175,9 +175,12 @@
 .noticias{
 	padding-top:5px;
 	.row{
+		p{
+			font-size:1.5rem;
+		}
 		.col{
 			p{
-				color: gray;
+
 			}
 			h1{
 				a{
@@ -196,24 +199,39 @@
 			a{
 				color:beige;
 				text-shadow: 1px 1px 1px #000;
-				font-weight:bold;
+			}
+			.container{
+				h1{
+					text-transform: capitalize;
+					color:antiquewhite;
+				}
+				color:pink;
 			}
 		}
 		.art{
 			background:rgb(112,128,144);
 			a{
-				color:rgb(124,252,0);
+				color:beige;
 				text-shadow: 1px 1px 1px #000;
+			}
+			.col{
+				h1{
+					color:beige;
+					text-transform: capitalize;
+				}
+			color:rgb(255,228,225);
+
 			}
 
 		}
 		.pub{
 			background:rgba(105,105,105,0.9);
 			a{
-						text-transform: capitalize;
-						color:rgb(124,252,0);
-						text-shadow: 1px 1px 1px #000;
-					}
+				text-transform: capitalize;
+				color:white;
+				text-shadow: 1px 1px 1px #000;
+			}
+			color:salmon;
 		}
 			#content{
 				border: 1px solid black;
@@ -227,7 +245,6 @@
 						height: auto;
 					}
 					.boton-noticias{
-						color:black;
 					}
 				}
 				.titul-secc{
