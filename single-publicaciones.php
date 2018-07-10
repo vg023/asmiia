@@ -11,27 +11,36 @@
     </h1>
   </div>
   <div class= "row conte-pub">
-    <div class="image-libro container col-sm-12 col-md-12 col-lg-6">
+    <div class="image-libro">
       <a href="<?php the_field( 'url' ); ?>">
         <?php if( get_field('imagen_de_portada') ): ?>
           <img src="<?php the_field('imagen_de_portada'); ?>" />
         <?php endif; ?>
       </a>
     </div>
-    <div class="info-libro container col-6 col-sm-12 col-md-12 col-lg-6">
-        <p>
-          <?php the_field('nombre');?>
-          <br><?php the_field('autor');?></br>
-          <ul>
-            <li><?php the_field('colaboradores');?></li>
-          </ul>
-          <br><?php the_field('editorial');?></br>
-          <br><?php the_field('isbn');?></br>
-          <br><?php the_field('edicion');?></br>
-
-        </p>
+    <div class="info-libro">   
+      <div class="nombre">
+        <?php the_field('nombre');?>
+      </div>
+      <div class="autor">
+        <?php the_field('autor');?>
+      </div>
+      <div class="colaboradores">
+        <ul>
+          <li><?php the_field('colaboradores');?></li>
+        </ul>  
+      </div>
+      <div class="editorial">
+        <?php the_field('editorial');?>  
+      </div>
+      <div class="isbn">
+        <?php the_field('isbn');?>  
+      </div>
+      <div class="edicion">
+        <?php the_field('edicion');?>  
+      </div>
     </div>
-    <div class="resena-libro col-lg-12 ">
+    <div class="resena-libro">
       <p>
         <?php the_field('reseña_del_libro');?>
       </p>
