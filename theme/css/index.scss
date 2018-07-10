@@ -69,16 +69,13 @@
 				position: absolute;
 				left:2rem;
 				top:5rem;
-				padding: 20%;
-
 				.titul-slide{
-
 					text-transform: uppercase;
 					text-align: center;
 					font-weight: bolder;
-					font-size: 50px;
+					font-size: 4.5rem;
 					a{
-					    color: rgb(119,136,153);
+					    color: white;
    						text-decoration: none;
     					text-shadow: 1px 1px 1px black;
 						&:hover{
@@ -121,7 +118,7 @@
 	height:11rem;
 	border: 1px solid white;
 	box-shadow:0 5px white;
-	background: rgba(0,0,0,0.8);
+	background: rgba(0,0,0,0.9);
 	color: white;
 	padding: 1.5rem;
 	text-shadow: 1px 1px 1px #000;
