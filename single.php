@@ -24,12 +24,12 @@
     <section id="contenido">
     	<div class="container-fluid">
     		<div class="row">
-    			<div class="col-6">
+    			<div class="col-4">
 	    			<?php
 	        			the_post_thumbnail();
 	        		?>	
 	    		</div>
-	      		<div class="col-6">
+	      		<div class="col-8">
 	      		<?php  
 	      			the_content();
 	      		?>

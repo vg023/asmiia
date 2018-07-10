@@ -37,7 +37,7 @@
 
 
 <div class="quienes container-flex ">
-	<h1>¿quienes somos?</h1>
+	<h1 class="encabezado-quienes">¿quienes somos?</h1>
 	<hr>
 	<i class="fa fa-angle-double-down flecha-abajo"></i>
 	<section class="quienes-conte row">
@@ -46,29 +46,16 @@
 			<!--<h2>ASMIIA</h2>-->
 		</div>
 
-
-
 		<div class="mision col-lg-6 ">
-
-					<h2>MISION</h2>
-					<p>
-					<?php the_field('mision',16);?>
-					</p>
-
+			<h2>MISION</h2>
+			<p><?php the_field('mision',16);?></p>
  		</div>
 
-
-
 		<div class="vision col-lg-6">
-
-				<h2>VISION</h2>
-					<p>
-					<?php the_field('vision',16); ?>
-					</p>
-
+			<h2>VISION</h2>
+			<p><?php the_field('vision',16); ?></p>
 		</div>
-
-			<i class="fa fa-angle-double-up flecha-arriba"></i>
+		<i class="fa fa-angle-double-up flecha-arriba"></i>
  </section>
 
 </div>
