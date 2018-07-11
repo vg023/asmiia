@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Publicaciones
+Template Name: publicaciones
 */
 ?>
 <?php get_header(); ?>
@@ -12,16 +12,15 @@ $args = array(
 $query = new WP_Query($args)
 ?>
 <?php if($query->have_posts()): while($query->have_posts()):$query->the_post(); ?>
-
   <div class="container">
   	<h1>
   		<a href="<?php the_permalink(); ?>"><?php the_title();?></a>
   	</h1>
-    <p><?php the_field('nombre');?></p>
+    <h2 class="autor">Autor:</h2>
     <p><?php the_field('autor');?></p>
+    <h2 class="isbn">ISBN:</h2>
     <p><?php the_field('isbn');?></p>
- <?php $imagen = get_field('imagen-de-portada'); ?>
-  <img src="<?php echo $imagen['url']; ?>">
+  <img src="<?php  the_field('imagen_de_portada'); ?>" alt=""> 
   	<p>
   		<?php the_excerpt();?>
   	</p>

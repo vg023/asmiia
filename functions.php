@@ -98,6 +98,7 @@ function publiaciones_post_type() {
 		'items_list'            => __( 'Lista de Elementos', 'text_domain' ),
 		'items_list_navigation' => __( 'Lista de Navegacion de Elementos', 'text_domain' ),
 		'filter_items_list'     => __( 'Filtrar Lista de Elementos', 'text_domain' ),
+
 	);
 	$args = array(
 		'label'                 => __( 'Publicacion', 'text_domain' ),
@@ -113,7 +114,7 @@ function publiaciones_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,
+		'has_archive'           => false,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
