@@ -1,33 +1,68 @@
-.title-pub h1{
-	text-align: center;
-	padding-top: 100px;
-}
-.nav-main{
+// .title-pub h1{
+// 	text-align: center;
+// 	padding-top: 100px;
+// }
+// .nav-main{
+// }
+// .image-libro{
+// 	padding: 5%;
+// }
+// .info-libro{
+// 	padding-top: 10%;
+// }
+// .info-libro li {
+// 	list-style: none;
+// }
+// .resena-libro {
+// 	padding: 0% 5% 5% 5%;
+// 	text-align: center;
+// }
+// .resena-libro p {
+// 	text-align: justify;
+// }
+// .resena-libro a {
+
+// }
+// .conte-pub {
+// }
+// .conte-pub h1{
+// 	color: green;
+// }
+// .conte-pub h2{
+// 	color:blue;
+// }
+
+
+
+.title-pub{
+	h1{
+		text-align: center;
+		padding-top: 100px;
+	}
 }
 .image-libro{
-	padding: 5%;
+	padding: 5%;	
 }
 .info-libro{
-	padding-top: 10%;
+	li{
+		padding-top: 10%;		
+	}
 }
-.info-libro li {
-	list-style: none;
-}
-.resena-libro {
+.resena-libro{
 	padding: 0% 5% 5% 5%;
 	text-align: center;
-}
-.resena-libro p {
-	text-align: justify;
-}
-.resena-libro a {
+	p{
+		text-align:justify;
+	}
+	a{
 
+	}
 }
-.conte-pub {
-};
-.conte-pub h1{
-	color: green;
-};
-.conte-pub h2{
-	color:blue;
-};
+.conte-pub{
+	h1{
+		color:green;
+	}
+	h2{
+		color:blue;
+	}
+}
