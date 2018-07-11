@@ -24,15 +24,22 @@
     <section id="contenido">
     	<div class="container-fluid">
     		<div class="row">
-    			<div class="col-12">
-            <h1><?php the_field( 'titulo_de_la_convocatoria' ); ?></h1>
+    			<div class="col-6">
             <a href="<?php the_field( 'url' ); ?>">
               <?php if ( get_field( 'imagen_de_convocatoria') ) { ?>
                   <img src="<?php the_field( 'imagen_de_convocatoria' ); ?>" />
               <?php } ?>
             </a>
+	    		</div>
+	      		<div class="col-6">
+	      		<?php
+	      			the_content();
+	      		?>
+            <h1><?php the_field( 'titulo_de_la_convocatoria' ); ?></h1>
             <p><?php the_field( 'informacion_de_la_convocatoria' ); ?></p>
             <a href="<?php the_field( 'url' ); ?>">Descargar las bases de la convocatoria</a>
+
+
 	      		</div>
     		</div>
 	    </div>

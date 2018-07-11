@@ -1,2 +1,29 @@
-.title-pub h1{text-align:center;padding-top:100px}.image-libro{padding:5%}.info-libro li{padding-top:10%}.resena-libro{padding:0% 5% 5% 5%;text-align:center}.resena-libro p{text-align:justify}.conte-pub h1{color:green}.conte-pub h2{color:blue}
-/*# sourceMappingURL=publicacion.css.map */
+.title-pub h1 {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.image-libro {
+  padding: 5%;
+}
+
+.info-libro li {
+  padding-top: 10%;
+}
+
+.resena-libro {
+  padding: 0% 5% 5% 5%;
+  text-align: center;
+}
+
+.resena-libro p {
+  text-align: justify;
+}
+
+.conte-pub h1 {
+  color: green;
+}
+
+.conte-pub h2 {
+  color: blue;
+}
