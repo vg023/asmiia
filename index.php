@@ -34,8 +34,6 @@
 	</div>
 </div>
 
-
-
 <div class="quienes container-flex ">
 	<h1 class="encabezado-quienes">¿quienes somos?</h1>
 	<hr>
@@ -60,19 +58,19 @@
 
 </div>
 
-
-
 <div class="noticias">
 	<div class="container-fluid">
 	 <div class="row">
 	 <div id="content" class="pub col-12" role="main">
 	    <?php get_template_part('loops/querypub-loop'); ?>
 	  </div><!-- /#content -->
-      <div id="content" class="blog col-12" role="main">
- 	    <?php get_template_part('loops/queryblo-loop'); ?>
-      </div><!-- /#content -->
+
+   <!--    <div id="content" class="blog col-12" role="main">
+ 	     get_template_part('loops/queryblo-loop'); 
+      </div> /#content -->
+      
       <div id="content" class="art col-12" role="main">
-	  	<?php get_template_part('loops/queryart-loop'); ?>
+	  	<?php get_template_part('loops/queryconv-loop'); ?>
 	  </div><!-- /#content -->
     </div>
 	</div>
