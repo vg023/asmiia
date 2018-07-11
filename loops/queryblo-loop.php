@@ -19,16 +19,19 @@
 			while ( $the_query->have_posts() ) : $the_query->the_post();
 		?>
 		<div class="container">
-			<h1>
-				<a href="<?php the_permalink();?>"><?php the_title();?></a>
-			</h1>
-			<p>
-  				<?php the_excerpt();?>
-  			</p>
-  			<a class="boton-noticias" href="<?php the_permalink();?>">¿Quieres leer más?</a>
+			<div class="blog-container">
+				<h1>
+					<a href="<?php the_permalink();?>"><?php the_title();?></a>
+				</h1>
+				<p>
+	  				<?php the_excerpt();?>
+	  			</p>	  				
+			</div>
+			
 			<div class="masc">
 				<?php the_post_thumbnail();?>	
 			</div>
+			<a class="boton-noticias" href="<?php the_permalink();?>">¿Quieres leer más?</a>
 		</div>
 		<?php
 			endwhile;

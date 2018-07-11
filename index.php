@@ -65,14 +65,14 @@
 <div class="noticias">
 	<div class="container-fluid">
 	 <div class="row">
+	 <div id="content" class="pub col-12" role="main">
+	    <?php get_template_part('loops/querypub-loop'); ?>
+	  </div><!-- /#content -->
       <div id="content" class="blog col-12" role="main">
  	    <?php get_template_part('loops/queryblo-loop'); ?>
       </div><!-- /#content -->
       <div id="content" class="art col-12" role="main">
 	  	<?php get_template_part('loops/queryart-loop'); ?>
-	  </div><!-- /#content -->
-	  <div id="content" class="pub col-12" role="main">
-	    <?php get_template_part('loops/querypub-loop'); ?>
 	  </div><!-- /#content -->
     </div>
 	</div>
