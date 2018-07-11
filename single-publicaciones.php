@@ -11,14 +11,14 @@
     </h1>
   </div>
   <div class= "row conte-pub">
-    <div class="image-libro">
+    <div class="image-libro col-lg-6">
       <a href="<?php the_field( 'url' ); ?>">
         <?php if( get_field('imagen_de_portada') ): ?>
           <img src="<?php the_field('imagen_de_portada'); ?>" />
         <?php endif; ?>
       </a>
     </div>
-    <div class="info-libro">   
+    <div class="info-libro col-lg-6">
       <div class="nombre">
         <?php the_field('nombre');?>
       </div>
@@ -28,16 +28,16 @@
       <div class="colaboradores">
         <ul>
           <li><?php the_field('colaboradores');?></li>
-        </ul>  
+        </ul>
       </div>
       <div class="editorial">
-        <?php the_field('editorial');?>  
+        <?php the_field('editorial');?>
       </div>
       <div class="isbn">
-        <?php the_field('isbn');?>  
+        <?php the_field('isbn');?>
       </div>
       <div class="edicion">
-        <?php the_field('edicion');?>  
+        <?php the_field('edicion');?>
       </div>
     </div>
     <div class="resena-libro">
