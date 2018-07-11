@@ -1,2 +1,23 @@
-h1{text-transform:uppercase;color:gainsboro}a{color:salmon}#contenido img{width:100%;height:auto;max-width:20rem}
-/*# sourceMappingURL=single.css.map */
+h1 {
+  text-transform: uppercase;
+  color: gainsboro;
+}
+
+a {
+  color: salmon;
+}
+
+#contenido h1 {
+  text-align: center;
+  color: green;
+  margin: 2rem;
+}
+
+#contenido img {
+  width: 80%;
+  height: auto;
+}
+
+#contenido p {
+  margin: 2rem;
+}
