@@ -2,21 +2,18 @@
 	.slide{
 		position:relative;
 		.mask{
-
-		p{
-			display:flex;
-			justify-content: center;
-			align-items:center;
-			color:white;
-			font-size:5rem;
-			height:100%;
-			position: absolute;
-			width:100%;
+			p{
+				display:flex;
+				justify-content: center;
+				align-items:center;
+				color:white;
+				font-size:5rem;
+				height:100%;
+				position: absolute;
+				width:100%;
+			}
 		}
 	}
-
-	}
-
 	img{
 		width:100%;
 	}
@@ -142,8 +139,6 @@
 			margin-top: 30px;
 			font-size: 120%;
 		}
-
-
 	}
 	h1{
 		text-align: justify;
@@ -213,15 +208,24 @@
 				color:beige;
 				text-shadow: 1px 1px 1px #000;
 			}
+			.container-fluid{
+				.row{
+					justify-content: center;
+					align-items:center;
+					padding: 1.5rem;
+				}
+			}
 			.col{
 				h1{
+					text-align:center;
 					color:beige;
 					text-transform: capitalize;
 				}
+				p{
+					text-align:justify;
+				}
 			color:rgb(255,228,225);
-
 			}
-
 		}
 		.pub{
 			background:rgba(105,105,105,0.9);
@@ -235,20 +239,27 @@
 			#content{
 				border: 1px solid black;
 				box-shadow: 0 5px black;
-
+				.titulo{
+					font-size:4.5rem;
+				}
 				.container{
 					box-shadow: 0 2px black;
-					padding:1rem 0;
+					padding:1.5rem;
 					img{
 						width:100%;
 						height: auto;
+					}
+					.titulo-publ{
+						text-align:center;
 					}
 					.boton-noticias{
 					}
 				}
 				.titul-secc{
+					padding: 1.5rem;
 					text-align:center;
 					a{
+						font-size:4.5rem;
 						text-transform: uppercase;
 					}
 				}

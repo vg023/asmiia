@@ -11,19 +11,23 @@
       		$category_id = get_cat_ID( 'publicaciones' );
       		$category_link = get_category_link( $category_id );
 		?>
-		
-      	<h1 class="titul-secc">
+		<div class="titulo">
+			<h1 class="titul-secc">
       		<a href="<?php echo get_site_url();?>/publicaciones" title="publicaciones">publicaciones</a>
       	</h1>
-		 
+			
+		</div>
+      	 
 		 <?php
 			while ( $the_query->have_posts() ) : $the_query->the_post();
 		?>
 		<div class="container">
 			<div class="pub-container">
-				<h1>
-					<a href="<?php the_permalink();?>"><?php the_title();?></a>
-				</h1>
+				<div class="titulo-publ">
+					<h1>
+						<a href="<?php the_permalink();?>"><?php the_title();?></a>
+					</h1>	
+				</div>
 				<p>
 	  				<?php the_excerpt();?>
 	  			</p>
