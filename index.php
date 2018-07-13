@@ -68,7 +68,7 @@
    <!--    <div id="content" class="blog col-12" role="main">
  	     get_template_part('loops/queryblo-loop'); 
       </div> /#content -->
-      
+
       <div id="content" class="art col-12" role="main">
 	  	<?php get_template_part('loops/queryconv-loop'); ?>
 	  </div><!-- /#content -->
@@ -78,15 +78,7 @@
 </div><!-- /.container-responsive -->
 <div class="parallax container-flex">
 	<div class="para-conte container-flex">
-		<h1>¿Como puedo aportar?</h1>
-		<div class="container">
-			<p>Haciendo deposito o transferencia con los siguientes datos</p>
-			<ul class="lista-aporte">
-				<li><span>Institucion:</span> Bancomer</li>
-				<li><span>Cuenta:</span> 00001115555</li>
-				<li><span>Razon social:</span> ASMIIA</li>
-			</ul>
-		</div>
+		<h1>¡PROXIMAMENTE MÁS NOTICIAS!</h1>
 		<div class="mask"></div>
 	</div>
 </div>
