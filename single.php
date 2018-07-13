@@ -12,6 +12,13 @@
       <h1>
         <?php the_title()?>
       </h1>
+    <div class="imagen">
+      <?php the_post_thumbnail(); ?>
+    </div>
+      <div class="contenido">
+        <?php the_content(); ?>
+      </div>
+
       <div class="header-meta text-muted">
         <?php
           _e('By ', 'b4st');
@@ -21,25 +28,7 @@
         ?>
       </div>
     </header>
-    <section id="contenido">
-    	<div class="container-fluid">
-    		<div class="row">
-    			<div class="col-12">
-            <h1><?php the_field( 'titulo_de_la_convocatoria' ); ?></h1>
-            <a href="<?php the_field( 'url' ); ?>">
-              <?php if ( get_field( 'imagen_de_convocatoria') ) { ?>
-                  <img src="<?php the_field( 'imagen_de_convocatoria' ); ?>" />
-              <?php } ?>
-            </a>
-            <p><?php the_field( 'informacion_de_la_convocatoria' ); ?></p>
-            <a href="<?php the_field( 'url' ); ?>">Descargar las bases de la convocatoria</a>
-	      		</div>
-    		</div>
-	    </div>
-    </section>
         <?php wp_link_pages(); ?>
-
-
     <footer class="mt-5 border-top pt-3">
       <p>
         <?php _e('Category: ', 'b4st'); the_category(', ') ?> | <?php if (has_tag()) { the_tags('Tags: ', ', '); ?> | <?php } _e('Comments', 'b4st'); ?>: <?php comments_popup_link(__('None', 'b4st'), '1', '%'); ?>
