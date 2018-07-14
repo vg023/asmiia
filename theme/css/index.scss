@@ -56,11 +56,22 @@
 			justify-content: center;
 			flex-direction: column;
 			position: relative;
-			img{
-				position: absolute;
-				width:100%;
-				height: auto;
-				z-index: -1;
+			.imagen{
+				img{
+					position: absolute;
+					width:100%;
+					height: auto;
+					z-index: -1;
+					@media(max-width: 760px){
+						display:none;
+					}
+				}
+			}
+			.imagen_mobile{
+				display:none;
+				@media (max-width:760px) {
+					display:block;
+				}
 			}
 			.titul{
 				position: absolute;
@@ -71,6 +82,9 @@
 					text-align: center;
 					font-weight: bolder;
 					font-size: 4.5rem;
+					@media (max-width: 760px) {
+						font-size:1.5rem;
+					}
 					a{
 					    color: white;
    						text-decoration: none;
@@ -83,6 +97,7 @@
 						}
 					}
 				}
+
 			}
 			.conte-s{
 				width: 80%;
