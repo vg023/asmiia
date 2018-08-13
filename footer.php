@@ -1,6 +1,6 @@
 
 <footer class="mt-5 bg-light">
-  <div class="contacto">
+ <!--  <div class="contacto">
     <h1>¿Quieres contactarnos?</h1>
     <div class="contacto-conte">
     <form class="form-group">
@@ -19,7 +19,7 @@
          <button>Enviar</button>
     </form>
     </div>
-  </div>
+  </div> -->
   <div class="container-responsive">
 
     <?php if(is_active_sidebar('footer-widget-area')): ?>

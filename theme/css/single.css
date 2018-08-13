@@ -1,23 +1,22 @@
+#nav-main {
+  position: relative;
+}
+
 h1 {
   text-transform: uppercase;
-  color: gainsboro;
+  color: black;
 }
 
 a {
   color: salmon;
 }
 
-#contenido h1 {
+#content h1 {
   text-align: center;
   color: green;
   margin: 2rem;
 }
 
-#contenido img {
-  width: 80%;
-  height: auto;
-}
-
-#contenido p {
-  margin: 2rem;
+#content p {
+  margin-top: 2rem;
 }
