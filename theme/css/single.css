@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #nav-main {
   position: relative;
 }
@@ -20,3 +21,7 @@ a {
 #content p {
   margin-top: 2rem;
 }
+=======
+#nav-main{position:relative}h1{text-transform:uppercase;color:black}a{color:salmon}#contenido h1{text-align:center;color:green;margin:2rem}#contenido img{width:80%;height:auto}#contenido p{margin:2rem}
+/*# sourceMappingURL=single.css.map */
+>>>>>>> bcf70175cd521712491e3922307d2ceeac684ca6
