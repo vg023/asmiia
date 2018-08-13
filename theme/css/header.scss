@@ -10,6 +10,9 @@
 	color:white;
 	height: 5rem;
 	top:0;
+	@media(max-width:760px) {
+		display:none;
+	}
 	.logo{
 		img{
 			width:5rem;
@@ -54,7 +57,5 @@
 			}
 		}
 	}
-	@media(max-width:768px) {
-		display:none;
-	}
+	
 }

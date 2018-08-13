@@ -48,6 +48,9 @@
 		}
 		.slick-next{
 			left:95%;
+			@media (max-width:760px) {
+				left:85%;
+			}
 		}
 		.pruebas{
 			display: flex;
@@ -56,11 +59,22 @@
 			justify-content: center;
 			flex-direction: column;
 			position: relative;
-			img{
-				position: absolute;
-				width:100%;
-				height: auto;
-				z-index: -1;
+			.imagen{
+				img{
+					position: absolute;
+					width:100%;
+					height: auto;
+					z-index: -1;
+					@media(max-width: 760px){
+						display:none;
+					}
+				}
+			}
+			.imagen_mobile{
+				display:none;
+				@media (max-width:760px) {
+					display:block;
+				}
 			}
 			.titul{
 				position: absolute;
@@ -71,6 +85,9 @@
 					text-align: center;
 					font-weight: bolder;
 					font-size: 4.5rem;
+					@media (max-width: 760px) {
+						font-size:2rem;
+					}
 					a{
 					    color: white;
    						text-decoration: none;
@@ -83,6 +100,7 @@
 						}
 					}
 				}
+
 			}
 			.conte-s{
 				width: 80%;
@@ -104,7 +122,9 @@
 					text-shadow: 1px 1px 1px #000;
 					text-decoration:none;
 					font-size: 2rem;
-
+					@media(max-width:760px){
+						font-size:1rem;
+					}
 				}
 			}
 		}
@@ -119,6 +139,9 @@
 	color: white;
 	padding: 1.5rem;
 	text-shadow: 1px 1px 1px #000;
+	@media (max-width: 760px){
+		height: 15rem;
+	}
 	.encabezado-quienes{
 		opacity:0;
 	}
@@ -128,6 +151,9 @@
 		p{
 			margin-top: 20px;
 			font-size: 120%;
+			@media(max-width:760px){
+				font-size:1.5rem;
+			}
 		}
 
 
@@ -138,6 +164,9 @@
 		p{
 			margin-top: 30px;
 			font-size: 120%;
+			@media(max-width:760px){
+				font-size:1.5rem;
+			}
 		}
 	}
 	h1{
@@ -241,6 +270,9 @@
 				box-shadow: 0 5px black;
 				.titulo{
 					font-size:4.5rem;
+					@media (max-width:760px) {
+						font-size:2rem;
+					}
 				}
 				.container{
 					box-shadow: 0 2px black;
@@ -261,6 +293,9 @@
 					a{
 						font-size:4.5rem;
 						text-transform: uppercase;
+						@media(max-width:760px){
+							font-size:2rem;
+						}
 					}
 				}
 			}
@@ -299,6 +334,9 @@
     	h1{
     		color: white;
     		text-transform:uppercase;
+    		@media (max-width:760px) {
+    			text-align:center;
+    		}
     	}
     	p{
     		color:white;

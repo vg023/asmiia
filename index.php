@@ -23,7 +23,13 @@
 			<div class="conte-s">
 				<p class="conte-slide"><?php the_excerpt(); ?></p>
 			</div>
-			<?php the_post_thumbnail(); ?>
+			<div class="imagen">
+				<?php the_post_thumbnail(); ?>
+			</div>
+				<div class="imagen_mobile">
+					<img src="<?php the_field('imagen_mobile');?>" alt="">
+				</div>	
+			
 		</div>
 	<?php
 		endwhile;
