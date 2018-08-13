@@ -31,9 +31,15 @@
 // .conte-pub h2{
 // 	color:blue;
 // }
-
-
-
+#nav-main{
+	position: relative;
+}
+.imagen{
+	img{
+		width:100%;
+		height: auto;
+	}
+}
 .title-pub{
 	h1{
 		text-align: center;
