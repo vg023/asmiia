@@ -61,7 +61,7 @@
 			position: relative;
 			.imagen{
 				img{
-					position: absolute;
+					
 					width:100%;
 					height: auto;
 					z-index: -1;
@@ -89,7 +89,7 @@
 						font-size:2rem;
 					}
 					a{
-					    color: white;
+					    color: black;
    						text-decoration: none;
     					text-shadow: 1px 1px 1px black;
 						&:hover{
@@ -110,7 +110,6 @@
 				&:hover{
 						background: rgba(white,0.5);
 						p{
-
 							color:black;
 							text-shadow: 1px 1px 1px white;
 						}
@@ -190,6 +189,43 @@
 	}
 	.quienes-conte{
 		padding:1.5rem;
+		.mesad{
+			text-align: center;
+			.sec{
+				display: flex;
+				justify-content: center;
+				padding: 1.5rem;
+				.mesa{
+					height: 500px;
+					width: 300px;
+					border: 1px solid white;
+					position: relative;
+					margin: 1rem;
+					.mesaimg{
+						position: absolute;
+						height: 50%;
+						top: 0;
+						left: 0;
+						width: 100%;
+						background:white;
+						.mesaimgcont{
+							height: 100px;
+							width: 100px;
+							border-radius: 100%;
+							background:orange;
+						}
+					}
+					.mesab{
+						position: absolute;
+						height: 50%;
+						top: 50%;
+						left: 0;
+						width: 100%;
+						background:blue;
+					}
+				}
+			}	
+		}
 	}
 }
 .comprimido{

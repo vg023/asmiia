@@ -4,6 +4,9 @@ Template Name: publicaciones
 */
 ?>
 <?php get_header(); ?>
+<div class="bnnr">
+  
+</div>
 <?php
 $args = array(
 		'posts_per_page' => -1,
