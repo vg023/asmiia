@@ -26,9 +26,9 @@
 			<div class="imagen">
 				<?php the_post_thumbnail(); ?>
 			</div>
-				<div class="imagen_mobile">
-					<img src="<?php the_field('imagen_mobile');?>" alt="">
-				</div>	
+			<div class="imagen_mobile">
+				<img src="<?php the_field('imagen_mobile');?>" alt="">
+			</div>	
 			
 		</div>
 	<?php
@@ -59,9 +59,59 @@
 			<h2>VISION</h2>
 			<p><?php the_field('vision',16); ?></p>
 		</div>
+		<div class="mesad col-12">	
+			<h2>Consejo Directivo</h2>
+			<div class="sec top">
+				<div class="mesa presidente">
+					<div class="mesaimg"></div>
+					<div class="mesab"></div>
+				</div>
+			</div> 
+			<div class="sec second">
+				<div class="mesa secreataria ">
+					<div class="mesaimg">
+						
+					</div>
+					<div class="mesab"></div>
+				</div>
+				<div class="mesa tesorera ">
+					<div class="mesaimg">
+						
+					</div>
+					<div class="mesab"></div>
+				</div> 
+			</div>
+			<div class="sec third">	
+				<div class="mesa primerav">
+					<div class="mesaimg">
+						<div class="mesaimgcont">
+							<img src="" alt="">
+						</div>	
+					</div>
+					<div class="mesab"></div>
+				</div>
+				<div class="mesa segundav ">
+					<div class="mesaimg">
+						
+					</div>
+					<div class="mesab"></div>
+				</div>
+				<div class="mesa tercerv ">
+					<div class="mesaimg">
+						
+					</div>
+					<div class="mesab"></div>
+				</div>
+				<div class="mesa cuartav ">
+					<div class="mesaimg">
+						
+					</div>
+					<div class="mesab"></div>
+				</div>
+			</div>
+		</div>
 		<i class="fa fa-angle-double-up flecha-arriba"></i>
- </section>
-
+ 	</section>
 </div>
 
 <div class="noticias">

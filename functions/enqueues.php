@@ -32,6 +32,9 @@ if ( ! function_exists('b4st_enqueues') ) {
 		}else if(is_singular( 'publicaciones' )){
 			wp_register_style('publicacion-css', get_template_directory_uri() . '/theme/css/publicacion.css', false, null);
 			wp_enqueue_style('publicacion-css');	
+		}else if(is_page( 'contacto' )){
+			wp_register_style('contacto-css', get_template_directory_uri() . '/theme/css/contacto.css', false, null);
+			wp_enqueue_style('contacto-css');	
 		}
 		// Scripts
 
